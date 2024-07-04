@@ -1,3 +1,3 @@
 #!/bin/bash
-# script that takes URL as arg sends GET request with additional info
-curl -sH "X-AtbirSchool-User-Id: 98" "$1"
+# Take in URL, add header variable, displays "Hello School!"; Usage: ./4-header.sh 0.0.0.0:5000/route_5 ; echo ""
+curl -s -H "X-School-User-Id":98 "$1"
